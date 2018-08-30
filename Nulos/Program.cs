@@ -16,6 +16,11 @@ namespace Nulos
             miCarro.Kilometraje = 100000;
             Console.WriteLine("Marca: " + miCarro.Marca);
             Console.WriteLine("Km: " + miCarro.Kilometraje);
+
+            miCarro.DueñoCarro = new Dueño();
+            miCarro.DueñoCarro.Nombre = "stemenxd";
+            //Si quiero que no tenga dueño carro se inicia en null. 
+            //miCarro.DueñoCarro = null;
            
            if (miCarro.DueñoCarro != null)
             {
@@ -23,7 +28,7 @@ namespace Nulos
             }
             else
             {
-                Console.WriteLine("No se encontro dueño");
+                Console.WriteLine("No se encontró dueño");
             }
             Console.ReadLine();
         }
